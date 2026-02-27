@@ -1,0 +1,24 @@
+title: "AI 动态日报"
+description: "每日 AI 动态摘要，聚焦 AI Use Case、人机协作、Builder 方法论与新兴产品动向。"
+url: "https://donynie.github.io"
+baseurl: "/ai-digest-2.0-archive"
+
+theme: minima
+lang: zh-CN
+
+minima:
+  date_format: "%Y-%m-%d"
+
+author:
+  name: donynie
+
+show_excerpts: true
+
+# URL 格式：/2026-02-28/ai-digest/
+permalink: /:year-:month-:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - README.md
