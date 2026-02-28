@@ -1,0 +1,10 @@
+---
+---
+@import "minima";
+
+/* 日报正文最大宽度，长文更易读 */
+.post-content {
+  max-width: 72em;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,3 +1,6 @@
+# 复制到 ~/ai-digest-2.0-archive/_config.yml（或合并其中的 future / minima 等项）
+# 若 archive 已存在，可只合并缺失项（如 future: true、minima.skin）避免覆盖已有修改。
+
 title: "AI 动态日报"
 description: "每日 AI 动态摘要，聚焦 AI Use Case、人机协作、Builder 方法论与新兴产品动向。"
 url: "https://donynie.github.io"
@@ -6,15 +9,17 @@ baseurl: "/ai-digest-2.0-archive"
 theme: minima
 lang: zh-CN
 
+# 允许当天日期的文章显示（Build 在 UTC，文章 date 为 +0800）
+future: true
+
 minima:
   date_format: "%Y-%m-%d"
+  show_excerpts: true
+  skin: auto
 
 author:
   name: donynie
 
-show_excerpts: true
-
-# URL 格式：/2026-02-28/ai-digest/
 permalink: /:year-:month-:day/:title/
 
 exclude:
@@ -22,6 +27,3 @@ exclude:
   - Gemfile.lock
   - .gitignore
   - README.md
-
-# Allow posts with future dates to be rendered
-future: true
