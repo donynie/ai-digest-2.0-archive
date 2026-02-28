@@ -22,3 +22,6 @@ exclude:
   - Gemfile.lock
   - .gitignore
   - README.md
+
+# Allow posts with future dates to be rendered
+future: true
