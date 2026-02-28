@@ -2,9 +2,40 @@
 ---
 @import "minima";
 
-/* 日报正文最大宽度，长文更易读 */
+/* ========== 单日详情页可读性（.post-content 为 Minima 正文容器） ========== */
+
 .post-content {
-  max-width: 72em;
+  max-width: 65em;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.post-content p {
+  margin-bottom: 1.25em;
+}
+
+.post-content h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.post-content h3 {
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 0.75em 0;
+  padding-left: 1.5em;
+}
+
+.post-content blockquote {
+  margin: 1.25em 0;
+  padding: 0.75em 1em;
+  padding-left: 1.25em;
+  border-left: 4px solid var(--minima-border-color, #e8e8e8);
+  background: var(--minima-code-background-color, rgba(0, 0, 0, 0.03));
 }

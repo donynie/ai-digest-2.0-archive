@@ -9,6 +9,9 @@ baseurl: "/ai-digest-2.0-archive"
 theme: minima
 lang: zh-CN
 
+# 首页列表显示每篇摘要（与 minima.show_excerpts 双写以兼容不同 Minima 版本）
+show_excerpts: true
+
 # 允许当天日期的文章显示（Build 在 UTC，文章 date 为 +0800）
 future: true
 
