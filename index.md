@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "AI 动态日报"
+title: "AI 动态日报 2.0"
 ---
 
 每日自动聚合 AI 领域最新动态，来源包括 Twitter、Reddit、YouTube、RSS、GitHub 等。  

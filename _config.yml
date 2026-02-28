@@ -1,7 +1,7 @@
 # 复制到 ~/ai-digest-2.0-archive/_config.yml（或合并其中的 future / minima 等项）
 # 若 archive 已存在，可只合并缺失项（如 future: true、minima.skin）避免覆盖已有修改。
 
-title: "AI 动态日报"
+title: "AI 动态日报 2.0"
 description: "每日 AI 动态摘要，聚焦 AI Use Case、人机协作、Builder 方法论与新兴产品动向。"
 url: "https://donynie.github.io"
 baseurl: "/ai-digest-2.0-archive"
