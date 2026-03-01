@@ -30,11 +30,12 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Build with Jekyll (no configure-pages, explicit future)
-        run: |
-          bundle exec jekyll build --future --verbose --source ./ --destination ./_site 2>&1 | head -60
-          echo "=== Site files ==="
-          find ./_site -name "*.html" | grep "2026" || echo "No 2026 html files found"
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll (future posts enabled)
+        run: bundle exec jekyll build --future --source ./ --destination ./_site
         env:
           JEKYLL_ENV: production
 
