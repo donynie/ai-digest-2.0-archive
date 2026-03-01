@@ -25,14 +25,17 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler-cache: true
+          bundler-cache: false
+
+      - name: Install dependencies
+        run: bundle install
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Jekyll (future posts enabled)
-        run: bundle exec jekyll build --future --source ./ --destination ./_site
+      - name: Build with Jekyll (future posts, verbose)
+        run: bundle exec jekyll build --future --verbose --source ./ --destination ./_site 2>&1 | tee /tmp/jekyll-build.log && echo "=== Posts found ===" && grep -E "Post|Writing|2026" /tmp/jekyll-build.log || true
         env:
           JEKYLL_ENV: production
 
